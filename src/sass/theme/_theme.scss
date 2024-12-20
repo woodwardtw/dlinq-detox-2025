@@ -17,8 +17,9 @@ a:hover {
 
 .dd-title {
   min-width: 70vw;
-  margin-top: 5vw;
-  padding: 2vw;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 2vw 5vw 0 5vw;
 }
 
 .home-container {
@@ -192,6 +193,7 @@ a:hover {
 
 .btn-more, .nav-previous, .nav-next {
   background-color: $lime;
+  margin: 50px auto;
 }
 
 .btn-more:hover, .nav-previous:hover, .nav-next:hover {
