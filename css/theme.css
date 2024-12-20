@@ -15477,6 +15477,10 @@ a:hover {
   text-decoration-color: #000;
 }
 
+.lime .btn-more {
+  background-color: #FF69B4;
+}
+
 #home .aqua {
   background-color: rgb(4, 176, 188);
   height: 100%;
@@ -15546,6 +15550,10 @@ a:hover {
 .btn-more:hover, .nav-previous:hover, .nav-next:hover {
   background-color: #FF69B4;
   box-shadow: -5px 5px rgb(68, 243, 0);
+}
+
+.lime .btn-more:hover {
+  box-shadow: -5px 5px #000;
 }
 
 .btn-signup {

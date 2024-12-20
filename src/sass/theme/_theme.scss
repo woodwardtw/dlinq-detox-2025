@@ -120,6 +120,11 @@ a:hover {
   text-decoration-color: $black;
 }
 
+.lime .btn-more {
+  background-color: $pink;
+}
+
+
 #home .aqua{
     background-color: $aqua;
     height: 100%;
@@ -191,6 +196,10 @@ a:hover {
 .btn-more:hover, .nav-previous:hover, .nav-next:hover {
     background-color: $pink;
     box-shadow: -5px 5px $lime;
+}
+
+.lime .btn-more:hover {
+  box-shadow: -5px 5px $black;
 }
 
 .btn-signup {
