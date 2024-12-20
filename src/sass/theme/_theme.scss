@@ -5,6 +5,10 @@ h1, h2, h3, h4 {
   font-family: "Press Start 2P", system-ui;
 }
 
+a {
+  text-decoration-color: $lime;
+}
+
 .dd-title {
   min-width: 70vw;
   margin-top: 5vw;
@@ -101,6 +105,15 @@ h1, h2, h3, h4 {
     height: 100%;
 }
 
+#home .lime{
+    background-color: $lime;
+    height: 100%;
+}
+
+.lime a {
+  text-decoration-color: $black;
+}
+
 #home .aqua{
     background-color: $aqua;
     height: 100%;
@@ -132,7 +145,7 @@ h1, h2, h3, h4 {
 .btn {
   font-size: 2rem;
   font-weight: 700;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Press Start 2P", system-ui;
   text-transform: uppercase;
   color: $black;
   padding: 5px 30px;
@@ -145,7 +158,7 @@ h1, h2, h3, h4 {
 }
 
 .nav-previous, .nav-next{
-  font-family: 'Oswald', sans-serif;
+  font-family: "Press Start 2P", system-ui;
   text-transform: uppercase;
   color: $black;
   padding: 5px 30px;
@@ -166,20 +179,20 @@ h1, h2, h3, h4 {
 }
 
 .btn-more, .nav-previous, .nav-next {
-  background-color: $yellow;
+  background-color: $lime;
 }
 
 .btn-more:hover, .nav-previous:hover, .nav-next:hover {
-    background-color: $yellow;
-    box-shadow: -5px 5px $red;
+    background-color: $pink;
+    box-shadow: -5px 5px $lime;
 }
 
 .btn-signup {
-  background-color: $aqua;
+  background-color: $lime;
 }
 
 .btn-signup:hover {
-    background-color: $aqua;
+    background-color: $lime;
     box-shadow: -5px 5px $red;
 }
 
@@ -198,6 +211,11 @@ h1, h2, h3, h4 {
 }
 
 /*activity*/
+
+.active-img {
+  width: 85%;
+  margin: 10px auto;
+}
 
 .activity-block {
   border: 4px solid $black;
@@ -334,7 +352,7 @@ h1, h2, h3, h4 {
 }
 
 #wrapper-footer a:hover {
-  background-color: $yellow;
+  background-color: $pink;
 }
 
 img.yellow {

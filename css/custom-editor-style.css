@@ -415,7 +415,7 @@ progress {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
+  --bs-pink: #FF69B4;
   --bs-red: rgb(214, 9, 5);
   --bs-orange: #f37722;
   --bs-yellow: rgb(247, 220, 10);
@@ -476,7 +476,7 @@ progress {
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #000;
   --bs-link-hover-color: black;
-  --bs-code-color: #d63384;
+  --bs-code-color: #FF69B4;
   --bs-highlight-bg: #fdf8ce;
 }
 
@@ -1967,7 +1967,7 @@ progress {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
+  --bs-pink: #FF69B4;
   --bs-red: rgb(214, 9, 5);
   --bs-orange: #f37722;
   --bs-yellow: rgb(247, 220, 10);
@@ -2028,7 +2028,7 @@ progress {
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #000;
   --bs-link-hover-color: black;
-  --bs-code-color: #d63384;
+  --bs-code-color: #FF69B4;
   --bs-highlight-bg: #fdf8ce;
 }
 
@@ -6265,16 +6265,16 @@ progress {
 
 .has-pink-color,
 .has-pink-color:visited {
-  color: #d63384;
+  color: #FF69B4;
 }
 
 .has-pink-background-color {
-  background-color: #d63384;
-  border-color: #d63384;
+  background-color: #FF69B4;
+  border-color: #FF69B4;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-pink-color {
-  color: #d63384;
+  color: #FF69B4;
 }
 
 .has-red-color,

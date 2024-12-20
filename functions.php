@@ -63,7 +63,7 @@ function detox_homepage_posts(){
 			global $post;
 			$title = get_the_title();
 			$link = get_the_permalink();
-			$img = get_the_post_thumbnail($post->ID,'medium', array('class' => 'img-fluid'));
+			$img = get_the_post_thumbnail($post->ID,'full', array('class' => 'img-fluid'));
 			$content = get_the_content();
 			$excerpt = strip_tags(substr($content, 0, 400)) . ' . . .';
 			$bg_colors = array('white', 'white', 'aqua', 'red', 'white', 'white');

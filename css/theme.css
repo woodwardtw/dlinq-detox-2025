@@ -9,7 +9,7 @@
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
+  --bs-pink: #FF69B4;
   --bs-red: rgb(214, 9, 5);
   --bs-orange: #f37722;
   --bs-yellow: rgb(247, 220, 10);
@@ -70,7 +70,7 @@
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #000;
   --bs-link-hover-color: black;
-  --bs-code-color: #d63384;
+  --bs-code-color: #FF69B4;
   --bs-highlight-bg: #fdf8ce;
 }
 
@@ -11897,16 +11897,16 @@ a.skip-link:not(:focus):not(:focus-within) {
 
 .has-pink-color,
 .has-pink-color:visited {
-  color: #d63384;
+  color: #FF69B4;
 }
 
 .has-pink-background-color {
-  background-color: #d63384;
-  border-color: #d63384;
+  background-color: #FF69B4;
+  border-color: #FF69B4;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-pink-color {
-  color: #d63384;
+  color: #FF69B4;
 }
 
 .has-red-color,
@@ -15362,6 +15362,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-family: "Press Start 2P", system-ui;
 }
 
+a {
+  -webkit-text-decoration-color: rgb(68, 243, 0);
+  text-decoration-color: rgb(68, 243, 0);
+}
+
 .dd-title {
   min-width: 70vw;
   margin-top: 5vw;
@@ -15457,6 +15462,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   height: 100%;
 }
 
+#home .lime {
+  background-color: rgb(68, 243, 0);
+  height: 100%;
+}
+
+.lime a {
+  -webkit-text-decoration-color: #000;
+  text-decoration-color: #000;
+}
+
 #home .aqua {
   background-color: rgb(4, 176, 188);
   height: 100%;
@@ -15486,7 +15501,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .btn, .wpcf7 input[type=submit], .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-info a.button {
   font-size: 2rem;
   font-weight: 700;
-  font-family: "Oswald", sans-serif;
+  font-family: "Press Start 2P", system-ui;
   text-transform: uppercase;
   color: #000;
   padding: 5px 30px;
@@ -15499,7 +15514,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 .nav-previous, .nav-next {
-  font-family: "Oswald", sans-serif;
+  font-family: "Press Start 2P", system-ui;
   text-transform: uppercase;
   color: #000;
   padding: 5px 30px;
@@ -15520,20 +15535,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 .btn-more, .nav-previous, .nav-next {
-  background-color: rgb(247, 220, 10);
+  background-color: rgb(68, 243, 0);
 }
 
 .btn-more:hover, .nav-previous:hover, .nav-next:hover {
-  background-color: rgb(247, 220, 10);
-  box-shadow: -5px 5px rgb(214, 9, 5);
+  background-color: #FF69B4;
+  box-shadow: -5px 5px rgb(68, 243, 0);
 }
 
 .btn-signup {
-  background-color: rgb(4, 176, 188);
+  background-color: rgb(68, 243, 0);
 }
 
 .btn-signup:hover {
-  background-color: rgb(4, 176, 188);
+  background-color: rgb(68, 243, 0);
   box-shadow: -5px 5px rgb(214, 9, 5);
 }
 
@@ -15553,6 +15568,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 /*activity*/
+.active-img {
+  width: 85%;
+  margin: 10px auto;
+}
+
 .activity-block {
   border: 4px solid #000;
   padding: 40px;
@@ -15686,7 +15706,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 #wrapper-footer a:hover {
-  background-color: rgb(247, 220, 10);
+  background-color: #FF69B4;
 }
 
 img.yellow {
