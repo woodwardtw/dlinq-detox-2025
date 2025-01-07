@@ -116,7 +116,7 @@
         ?>
             <div class='row topic-row full-width-row d-flex align-items-center'>
                 <div class='col-md-6 offset-md-3'>                   
-                    <blockquote class="big-quote">
+                    <blockquote class="lead-quote">
                         <?php echo $content;?>
                         <footer><?php echo $source;?></footer>
                     </blockquote>
