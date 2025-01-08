@@ -16011,6 +16011,12 @@ ol.wp-block-latest-comments {
   font-size: 1.3rem;
 }
 
+.category-vibe-check .entry-content h2, .category-vibe-check .entry-content .h2 {
+  border-bottom: 2px solid;
+  border-left: 40px solid rgb(68, 243, 0);
+  padding-left: 20px;
+}
+
 @media only screen and (max-width: 600px) {
   .home-box {
     margin: 0 0;
