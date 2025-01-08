@@ -15705,13 +15705,8 @@ a:hover {
 }
 
 #submit {
-  font-size: 1.3rem;
-  background-color: rgb(247, 220, 10);
-}
-
-#submit:hover {
-  box-shadow: -5px 5px rgb(214, 9, 5);
-  color: #000;
+  max-width: 100%;
+  text-align: center;
 }
 
 #sub-btn {

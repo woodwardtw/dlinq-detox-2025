@@ -351,13 +351,8 @@ a:hover {
 }
 
 #submit {
-  font-size: 1.3rem;
-  background-color: $yellow;
-}
-
-#submit:hover {
-  box-shadow: -5px 5px $red;
-  color: $black;
+  max-width: 100%;
+  text-align: center;
 }
 
 #sub-btn {
