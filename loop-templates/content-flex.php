@@ -212,7 +212,7 @@
                         <button type='button' class='btn btn-more' id='sub-btn' data-bs-toggle='modal' data-bs-target='#submission'>
                            Submit content
                             </button>
-                        <div class='modal modal-lg fade' id='submission' tabindex='-1'>
+                        <div class='modal modal-lg fade' id='submission' tabindex='-1' data-bs-focus='false'>
                                 <div class='modal-dialog'>
                                     <div class='modal-content'>
                                     <div class='modal-header'>
