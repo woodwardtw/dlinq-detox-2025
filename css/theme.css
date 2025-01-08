@@ -15545,14 +15545,15 @@ a:hover {
   text-decoration: none;
 }
 
-.btn-more, .nav-previous, .nav-next, .wp-element-button {
+.btn-more, .nav-previous, .nav-next, .wp-element-button, .btn-secondary {
   background-color: rgb(68, 243, 0);
   margin: 50px auto;
 }
 
-.btn-more:hover, .nav-previous:hover, .nav-next:hover, .wp-element-button:hover {
+.btn-more:hover, .nav-previous:hover, .nav-next:hover, .wp-element-button:hover, .btn-secondary:hover {
   background-color: #FF69B4;
   box-shadow: -5px 5px rgb(68, 243, 0);
+  cursor: pointer;
 }
 
 .lime .btn-more:hover {
