@@ -152,7 +152,7 @@ function detox_display_submissions($page_id){
 			} else {
 				$dir = get_template_directory_uri();
 				$color = detox_rand_color();
-				$img = "<img src='{$dir}/imgs/ai-wave-white.svg' class='attachment-medium size-medium wp-post-image {$color}' width='100%' height='auto' alt='AI written with a half-tone background.'>";
+				$img = "<img src='{$dir}/imgs/alien.svg' class='attachment-medium size-medium wp-post-image {$color}' width='100%' height='auto' alt='AI written with a half-tone background.'>";
 			}
 		echo "<div class='entry col-md-4'>
 				<div class='entry-inner'>
