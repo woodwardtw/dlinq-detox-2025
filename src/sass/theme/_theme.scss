@@ -191,12 +191,12 @@ a:hover {
   text-decoration: none;
 }
 
-.btn-more, .nav-previous, .nav-next, .wp-element-button, .btn-secondary {
+.btn-more, .nav-previous, .nav-next, .wp-element-button, .btn-secondary, #submit {
   background-color: $lime;
   margin: 50px auto;
 }
 
-.btn-more:hover, .nav-previous:hover, .nav-next:hover, .wp-element-button:hover,  .btn-secondary:hover {
+.btn-more:hover, .nav-previous:hover, .nav-next:hover, .wp-element-button:hover,  .btn-secondary:hover, #submit:hover {
     background-color: $pink;
     box-shadow: -5px 5px $lime;
     cursor: pointer;
