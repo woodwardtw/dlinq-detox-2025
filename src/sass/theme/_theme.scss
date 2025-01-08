@@ -191,12 +191,12 @@ a:hover {
   text-decoration: none;
 }
 
-.btn-more, .nav-previous, .nav-next {
+.btn-more, .nav-previous, .nav-next, .wp-element-button {
   background-color: $lime;
   margin: 50px auto;
 }
 
-.btn-more:hover, .nav-previous:hover, .nav-next:hover {
+.btn-more:hover, .nav-previous:hover, .nav-next:hover, .wp-element-button:hover {
     background-color: $pink;
     box-shadow: -5px 5px $lime;
 }
@@ -661,6 +661,17 @@ ol.wp-block-latest-comments {
   background: linear-gradient(to bottom right, #fff 0%, #fff 50%, $red 50%, $red 100%);
   transform: rotate(45deg);
 }
+
+
+.topic-row ul li ul li {
+  font-size: 1.1rem;
+}
+
+#activity-content blockquote footer p{
+  font-size: 1.3rem;
+}
+
+
 
 @media only screen and (max-width: 600px) {
     .home-box{
