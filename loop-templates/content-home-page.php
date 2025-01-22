@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 	<div class="entry-content contain-fluid home-box" id="home">
 		<div class="row">
 			
-			<div class="col-md-6 offset-md-3 home-box lime">
+			<div class="col-md-10 offset-md-1 home-box lime">
 			<div class="internal-left-block">
 				<?php 
 					dlinq_detox_signup();
