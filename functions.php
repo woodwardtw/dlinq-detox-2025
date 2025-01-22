@@ -70,7 +70,7 @@ function detox_homepage_posts(){
 			$bg_color = $bg_colors[$the_query->current_post]; //change background color according to array
 			$make_seven = array(0, 1, 4, 5, 7 );
 			$post_number = $the_query->current_post;
-			$class = (in_array( $post_number, $make_seven )) ? 'col-md-7' : 'col-md-5' ; // alternate 5 and 7 column width blocks
+			$class = 'col-md-10 offset-md-1'; // alternate 5 and 7 column width blocks
 			$img_side = ($the_query->current_post % 3 == 0) ? 'order-md-last' : 'order-md-first'; //alter img to go first or last 
 			$link = (in_category('active')) ? "<a class='btn btn-more' href='{$link}' aria-lable='Read more about the AI topic: {$title}.'>Explore</a>" : "<div class='btn btn-more'>Coming soon</div>";
 			$html = "<div class='{$class}'>
