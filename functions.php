@@ -63,7 +63,8 @@ function detox_homepage_posts(){
 			global $post;
 			$title = get_the_title();
 			$link = get_the_permalink();
-			$img = get_the_post_thumbnail($post->ID,'full', array('class' => 'img-fluid'));
+			//$img = get_the_post_thumbnail($post->ID,'full', array('class' => 'img-fluid'));
+			$img = dlinq_vid_option($post->ID);
 			$content = get_the_content();
 			$excerpt = strip_tags(substr($content, 0, 400)) . ' . . .';
 			$bg_colors = array('white', 'white', 'aqua', 'red', 'white', 'white');
@@ -95,6 +96,25 @@ function detox_homepage_posts(){
 	wp_reset_postdata();
 }
 
+
+function dlinq_vid_option($post_id){
+	$html = '';
+    $video_url = get_post_meta($post_id, '_featured_video_url', true);
+    if ($video_url):
+        $html .= '<div class="featured-video">';
+        if (strpos($video_url, 'youtube.com') !== false || strpos($video_url, 'vimeo.com') !== false) {
+           $html .='<iframe width="100%" height="400" src="'. esc_url($video_url) .'" frameborder="0" allowfullscreen></iframe>';
+        } else {
+             $html .= '<video width="100%" height="400" loop="true" autoplay="autoplay" controls muted>
+                    <source src="'. esc_url($video_url) .'" type="video/mp4">
+                  </video>';
+        }
+         $html .= '</div>';
+    else:
+        $html .= get_the_post_thumbnail( $post_id, 'full',  array('class' => 'img-fluid active-img') );
+    endif;
+    return $html;
+}
 
 //CHALLENGES
 //NEEDS TO BE IN MAIN FUNCTIONS FOR SOME REASON
@@ -249,3 +269,32 @@ function rich_text_comment_form( $args ) {
 	$args['comment_field'] = ob_get_clean();
 	return $args;
 }
+
+function add_video_featured_meta_box() {
+    add_meta_box(
+        'video_featured',
+        'Featured Video',
+        'video_featured_meta_box_callback',
+        'activity',
+        'side',
+        'low'
+    );
+}
+add_action('add_meta_boxes', 'add_video_featured_meta_box');
+
+function video_featured_meta_box_callback($post) {
+    $video_url = get_post_meta($post->ID, '_featured_video_url', true);
+    ?>
+    <label for="featured_video_url">Video URL:</label>
+    <input type="text" name="featured_video_url" id="featured_video_url" value="<?php echo esc_attr($video_url); ?>" style="width:100%;" />
+    <p>Paste a video URL (YouTube, Vimeo, or MP4) to set as the featured video.</p>
+    <?php
+}
+
+function save_featured_video_meta_box($post_id) {
+    if (isset($_POST['featured_video_url'])) {
+        update_post_meta($post_id, '_featured_video_url', esc_url($_POST['featured_video_url']));
+    }
+}
+add_action('save_post', 'save_featured_video_meta_box');
+
