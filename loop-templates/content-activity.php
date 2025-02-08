@@ -14,19 +14,19 @@ defined( 'ABSPATH' ) || exit;
         <div class="col-md-5">
             <?php  
                 $video_url = get_post_meta(get_the_ID(), '_featured_video_url', true);
-            if ($video_url):
-                echo '<div class="featured-video">';
-                if (strpos($video_url, 'youtube.com') !== false || strpos($video_url, 'vimeo.com') !== false) {
-                    echo '<iframe width="100%" height="400" src="'. esc_url($video_url) .'" frameborder="0" allowfullscreen></iframe>';
-                } else {
-                    echo '<video width="100%" height="400" loop="true" autoplay="autoplay" controls muted>
-                            <source src="'. esc_url($video_url) .'" type="video/mp4">
-                          </video>';
-                }
-                echo '</div>';
-            else:
-               echo get_the_post_thumbnail( $post->ID, 'full',  array('class' => 'img-fluid active-img') );
-            endif;
+                if ($video_url):
+                    echo '<div class="featured-video">';
+                    if (strpos($video_url, 'youtube.com') !== false || strpos($video_url, 'vimeo.com') !== false) {
+                        echo '<iframe width="100%" height="400" src="'. esc_url($video_url) .'" frameborder="0" allowfullscreen></iframe>';
+                    } else {
+                        echo '<video width="100%" height="400" loop="true" autoplay="autoplay" controls muted>
+                                <source src="'. esc_url($video_url) .'" type="video/mp4">
+                              </video>';
+                    }
+                    echo '</div>';
+                else:
+                   echo get_the_post_thumbnail( $post->ID, 'full',  array('class' => 'img-fluid active-img') );
+                endif;
              ?>
         </div>
         <div class="col-md-5">
